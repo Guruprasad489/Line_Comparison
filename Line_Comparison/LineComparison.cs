@@ -33,13 +33,19 @@ namespace Line_Comparison
             line2_Length = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
             Console.WriteLine("Length of the line 2 is : " + line2_Length);
 
-            bool equalityCheck = line1_Length.Equals(line2_Length);
-
-            if (equalityCheck == true)
-                Console.WriteLine("Lengths of line 1 and line 2 ane equal");
-            else
-                Console.WriteLine("Lengths of line 1 and line 2 ane not equal");
-
+            double diff = line1_Length.CompareTo(line2_Length);
+            if(diff < 0)
+            {
+                Console.WriteLine("Length of Line 1 is less than Line2");
+            }
+            if (diff > 0)
+            {
+                Console.WriteLine("Length of Line 1 is greater than Line2");
+            }
+            if (diff == 0)
+            {
+                Console.WriteLine("Length of Line 1 equal to Line2");
+            }
         }
     }
 }
