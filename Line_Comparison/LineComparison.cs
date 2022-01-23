@@ -28,15 +28,17 @@ namespace Line_Comparison
             y4 = Convert.ToInt32(Console.ReadLine());
 
             line1_Length = Math.Sqrt(Math.Pow((x2 - x1),2) + Math.Pow((y2-y1),2));
-            Console.WriteLine("Length of the line is : " + line1_Length);
+            Console.WriteLine("Length of the line 1 is : " + line1_Length);
 
             line2_Length = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
-            Console.WriteLine("Length of the line is : " + line2_Length);
+            Console.WriteLine("Length of the line 2 is : " + line2_Length);
 
-            if (line1_Length == line2_Length)
-                Console.WriteLine("Length of line 1 and line 2 ane equal");
+            bool equalityCheck = line1_Length.Equals(line2_Length);
+
+            if (equalityCheck == true)
+                Console.WriteLine("Lengths of line 1 and line 2 ane equal");
             else
-                Console.WriteLine("Length of line 1 and line 2 ane not equal");
+                Console.WriteLine("Lengths of line 1 and line 2 ane not equal");
 
         }
     }
