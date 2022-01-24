@@ -13,19 +13,19 @@ namespace Line_Comparison
         {
             Console.WriteLine("Please Enter x , y Co-ordinates of line 1 :");
             Console.WriteLine("Please Enter values of x1 and y1");
-            x1 = Convert.ToInt32(Console.ReadLine());
-            y1 = Convert.ToInt32(Console.ReadLine());
+            x1 = Convert.ToDouble(Console.ReadLine());
+            y1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Please Enter values of x2 and y2");
-            x2 = Convert.ToInt32(Console.ReadLine());
-            y2 = Convert.ToInt32(Console.ReadLine());
+            x2 = Convert.ToDouble(Console.ReadLine());
+            y2 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Please Enter x , y Co-ordinates of line 2 :");
             Console.WriteLine("Please Enter values of x3 and y3");
-            x3 = Convert.ToInt32(Console.ReadLine());
-            y3 = Convert.ToInt32(Console.ReadLine());
+            x3 = Convert.ToDouble(Console.ReadLine());
+            y3 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Please Enter values of x4 and y4");
-            x4 = Convert.ToInt32(Console.ReadLine());
-            y4 = Convert.ToInt32(Console.ReadLine());
+            x4 = Convert.ToDouble(Console.ReadLine());
+            y4 = Convert.ToDouble(Console.ReadLine());
 
             line1_Length = Math.Sqrt(Math.Pow((x2 - x1),2) + Math.Pow((y2-y1),2));
             Console.WriteLine("Length of the line 1 is : " + line1_Length);
